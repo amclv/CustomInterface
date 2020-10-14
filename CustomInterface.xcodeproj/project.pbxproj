@@ -15,6 +15,7 @@
 		5D469D20253756BA0093A7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D469D1E253756BA0093A7D0 /* LaunchScreen.storyboard */; };
 		5D469D2A253757330093A7D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D29253757320093A7D0 /* Extensions.swift */; };
 		5D469D2E253759D10093A7D0 /* SingleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D2D253759D10093A7D0 /* SingleLine.swift */; };
+		5D469D3125375B7F0093A7D0 /* CurveLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D3025375B7F0093A7D0 /* CurveLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5D469D21253756BA0093A7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D469D29253757320093A7D0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5D469D2D253759D10093A7D0 /* SingleLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLine.swift; sourceTree = "<group>"; };
+		5D469D3025375B7F0093A7D0 /* CurveLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5D469D2D253759D10093A7D0 /* SingleLine.swift */,
+				5D469D3025375B7F0093A7D0 /* CurveLine.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				5D469D16253756B90093A7D0 /* SceneDelegate.swift in Sources */,
 				5D469D2A253757330093A7D0 /* Extensions.swift in Sources */,
 				5D469D2E253759D10093A7D0 /* SingleLine.swift in Sources */,
+				5D469D3125375B7F0093A7D0 /* CurveLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
