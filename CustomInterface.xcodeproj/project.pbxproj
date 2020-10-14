@@ -17,6 +17,7 @@
 		5D469D2E253759D10093A7D0 /* SingleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D2D253759D10093A7D0 /* SingleLine.swift */; };
 		5D469D3125375B7F0093A7D0 /* CurveLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D3025375B7F0093A7D0 /* CurveLine.swift */; };
 		5D469D3425375C0D0093A7D0 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D3325375C0D0093A7D0 /* Circle.swift */; };
+		5D469D3725375D6F0093A7D0 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D469D3625375D6F0093A7D0 /* Rectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5D469D2D253759D10093A7D0 /* SingleLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLine.swift; sourceTree = "<group>"; };
 		5D469D3025375B7F0093A7D0 /* CurveLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveLine.swift; sourceTree = "<group>"; };
 		5D469D3325375C0D0093A7D0 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		5D469D3625375D6F0093A7D0 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				5D469D2D253759D10093A7D0 /* SingleLine.swift */,
 				5D469D3025375B7F0093A7D0 /* CurveLine.swift */,
 				5D469D3325375C0D0093A7D0 /* Circle.swift */,
+				5D469D3625375D6F0093A7D0 /* Rectangle.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				5D469D2A253757330093A7D0 /* Extensions.swift in Sources */,
 				5D469D2E253759D10093A7D0 /* SingleLine.swift in Sources */,
 				5D469D3125375B7F0093A7D0 /* CurveLine.swift in Sources */,
+				5D469D3725375D6F0093A7D0 /* Rectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
