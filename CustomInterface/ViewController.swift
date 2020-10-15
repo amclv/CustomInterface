@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     let squashButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("| Squash |", for: .normal)
+        button.addTarget(self, action: #selector(squashButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -122,6 +123,40 @@ class ViewController: UIViewController {
             }
         }
 
+    }
+    
+    @objc func squashButtonTapped() {
+        let animationBlock = {
+            UIView.addKeyframe(withRelativeStartTime: 0,
+                               relativeDuration: 0.4) {
+                self.rectanglePath.center = self.view.center
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.3,
+                               relativeDuration: 0.2) {
+                self.rectanglePath.transform = CGAffineTransform(scaleX: 1.7, y: 0.6)
+            }
+            
+            UIView.addKeyframe(withRelativeStartTime: 0.5,
+                               relativeDuration: 0.2) {
+                self.rectanglePath.transform = CGAffineTransform(scaleX: 0.6, y: 1.7)
+            }
+            
+            UIView.addKeyframe(withRelativeStartTime: 0.7,
+                               relativeDuration: 0.15) {
+                self.rectanglePath.transform = CGAffineTransform(scaleX: 1.11, y: 0.9)
+            }
+            
+            UIView.addKeyframe(withRelativeStartTime: 0.85,
+                               relativeDuration: 0.15) {
+                self.rectanglePath.transform = .identity
+            }
+        }
+        
+        UIView.animateKeyframes(withDuration: 1.5,
+                                delay: 0,
+                                options: [],
+                                animations: animationBlock,
+                                completion: nil)
     }
 
 }
