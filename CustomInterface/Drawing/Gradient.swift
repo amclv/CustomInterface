@@ -57,5 +57,4 @@ class Gradients: UIView {
         context.restoreGState()
         
     }
-    
 }
