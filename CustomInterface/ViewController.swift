@@ -19,31 +19,35 @@ class ViewController: UIViewController {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
+        stack.alignment = .center
+        stack.distribution = .fillEqually
+        stack.spacing = 8
         return stack
     }()
     
     let bounceButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Bounce", for: .normal)
+        button.setTitle("| Bounce |", for: .normal)
         button.addTarget(self, action: #selector(bounceButtonTapped), for: .touchUpInside)
         return button
     }()
     
     let rotateButton: UIButton = {
         let button = UIButton(type: .system)
-        
+        button.setTitle("| Rotate |", for: .normal)
+        button.addTarget(self, action: #selector(rotateButtonTapped), for: .touchUpInside)
         return button
     }()
     
-    let sprintButton: UIButton = {
+    let squashButton: UIButton = {
         let button = UIButton(type: .system)
-        
+        button.setTitle("| Squash |", for: .normal)
         return button
     }()
     
     let keyButton: UIButton = {
         let button = UIButton(type: .system)
-        
+        button.setTitle("| Key |", for: .normal)
         return button
     }()
 
@@ -60,11 +64,15 @@ class ViewController: UIViewController {
         showRectanglePath()
 //        showGradients()
         
+        buttonHStack.addArrangedSubview(keyButton)
+        buttonHStack.addArrangedSubview(squashButton)
+        buttonHStack.addArrangedSubview(rotateButton)
         buttonHStack.addArrangedSubview(bounceButton)
         view.addSubview(buttonHStack)
         buttonHStack.anchor(left: view.leftAnchor,
                             bottom: view.safeAreaLayoutGuide.bottomAnchor,
-                            right: view.rightAnchor)
+                            right: view.safeAreaLayoutGuide.rightAnchor,
+                            paddingBottom: 20)
     }
     
     private func showSingleLine() {
@@ -103,6 +111,17 @@ class ViewController: UIViewController {
                        animations: {
                         self.rectanglePath.transform = .identity
                        }, completion: nil)
+    }
+    
+    @objc func rotateButtonTapped() {
+        UIView.animate(withDuration: 1.0) {
+            self.rectanglePath.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        } completion: { (_) in
+            UIView.animate(withDuration: 1.0) {
+                self.rectanglePath.transform = .identity
+            }
+        }
+
     }
 
 }
